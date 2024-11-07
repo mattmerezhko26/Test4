@@ -7,12 +7,13 @@ const HTTP_PORT = process.env.PORT || 4000;
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.set('views', __dirname + '/views');
+
 app.get('/', (req, res) => {
   res.render("index");
 });
 
-app.get('/user', (req, res) => {
-  res.render("user", { users: data.users });
+app.get('/users', (req, res) => {
+  res.render("users", { users: data.users });
 });
 
 
