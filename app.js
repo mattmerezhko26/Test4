@@ -2,7 +2,7 @@ const express=require("express");
 const app=express();
 const path=require("path");
 const data = require("./test4.js");
-const HTTP_PORT = process.env.PORT || 4000;
+const HTTP_PORT = process.env.PORT || 4040;
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
