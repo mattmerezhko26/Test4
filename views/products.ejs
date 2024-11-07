@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Products</title>
+  </head>
+  <body>
+    <h1>Products</h1>
+    <table border='1'>
+      <tr>
+        <th>PID</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+      <% products.forEach(products => { %>
+        <tr>
+          <td><%= products.PID %></td>
+          <td><%= products.name %></td>
+          <td><%= products.price %></td>
+        </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
